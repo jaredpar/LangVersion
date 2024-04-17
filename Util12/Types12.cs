@@ -44,3 +44,9 @@ public class BigInt
     public static int operator checked +(BigInt a, BigInt b) => 1;
 }
 
+public struct ROStruct
+{
+    public void M1() { }
+    public readonly void M2() { }
+}
+

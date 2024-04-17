@@ -14,7 +14,13 @@ public class Program
         string x = DynamicUtil.M3();
     }
 
+    static readonly ROStruct s_roStruct = new ROStruct();
 
+    public static void ReadOnlyMembers()
+    {
+        s_roStruct.M1();
+        s_roStruct.M2();
+    }
     // Definitions of features that fail to compile.
 #if false
 

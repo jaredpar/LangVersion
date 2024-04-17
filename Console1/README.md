@@ -13,3 +13,4 @@ a number of features from higher language versions.
 | primary ctor | No | Yes | Can call like a normal constructor |
 | covariant returns | No | Yes | Sees the derived return type |
 | checked operators | No | No | Consumption is guarded |
+| readonly members | No | No | Copies occur on `readonly` members |
