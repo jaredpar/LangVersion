@@ -22,3 +22,25 @@ public class GenericType<T>
     public static implicit operator GenericType<T>(string o) => new GenericType<T>();
     public static implicit operator string(GenericType<T> o) => "";
 }
+
+public class PrimaryConstructor(int value)
+{
+    public int Value => value;
+}
+
+public abstract class CovariantReturnBase
+{
+    public abstract object M1();
+}
+
+public class CovariantReturn : CovariantReturnBase
+{
+    public override string M1() => "";
+}
+
+public class BigInt
+{
+    public static int operator+(BigInt a, BigInt b) => 0;
+    public static int operator checked +(BigInt a, BigInt b) => 1;
+}
+

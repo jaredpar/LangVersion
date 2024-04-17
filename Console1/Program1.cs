@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Util12;
 public class Program
 {
@@ -26,6 +27,28 @@ public class Program
         GenericUtil.M2("hello world");
         object o = GenericUtil.M3();
         string o2 = GenericUtil.M3();
+    }
+
+    public static void PrimaryConstructors()
+    {
+        PrimaryConstructor c = new PrimaryConstructor(42);
+        Console.WriteLine(c.Value);
+    }
+
+    public static void CovariantReturn()
+    {
+        CovariantReturn b = new CovariantReturn();
+        string s = b.M1();
+    }
+
+    public static void CheckedOperators()
+    {
+        BigInt b = new BigInt();
+#if false
+        checked {
+            int x = b + b;
+        }
+#endif
     }
 
     // Definitions of features that fail to compile.
