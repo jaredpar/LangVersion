@@ -66,6 +66,18 @@ public class Program
 #endif
     }
 
+    public static void RefFields()
+    { 
+#if false
+        Console.WriteLine(RefStructUtil.M1());
+#endif
+    }
+
+    public static void RefStructs()
+    {
+        Console.WriteLine(RefStructUtil.M1().IsEmpty);
+    }
+
     // Definitions of features that fail to compile.
 #if false
 

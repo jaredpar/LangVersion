@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 namespace Util12;
 
@@ -56,5 +57,16 @@ public class BetterOverloadCandidates
 {
     public static void M(A a) { }
     public void M(B b) { }
+}
+
+public ref struct RefStruct
+{
+    public readonly ref int Field;
+    public bool IsEmpty => false;
+}
+
+public static class RefStructUtil
+{
+    public static RefStruct M1() => new RefStruct();
 }
 

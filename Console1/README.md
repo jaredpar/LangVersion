@@ -15,3 +15,5 @@ a number of features from higher language versions.
 | checked operators | No | No | Consumption is guarded |
 | readonly members | No | No | Copies occur on `readonly` members |
 | better overload candidates inst vs. static | N/A | No | |
+| `ref` fields | No | No | Lets all rejoice at this one |
+| `ref struct` members | No | Yes | Can consume `ref struct` members |
