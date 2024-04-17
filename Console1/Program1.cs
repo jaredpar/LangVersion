@@ -59,6 +59,13 @@ public class Program
         s_roStruct.M2();
     }
 
+    public static void BetterOverloadCandidatesConsumption()
+    {
+#if false
+        BetterOverloadCandidates.M(null);
+#endif
+    }
+
     // Definitions of features that fail to compile.
 #if false
 

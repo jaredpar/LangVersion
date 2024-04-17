@@ -14,3 +14,4 @@ a number of features from higher language versions.
 | covariant returns | No | Yes | Sees the derived return type |
 | checked operators | No | No | Consumption is guarded |
 | readonly members | No | No | Copies occur on `readonly` members |
+| better overload candidates inst vs. static | N/A | No | |

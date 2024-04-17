@@ -50,3 +50,11 @@ public struct ROStruct
     public readonly void M2() { }
 }
 
+public class A { }
+public class B { }
+public class BetterOverloadCandidates
+{
+    public static void M(A a) { }
+    public void M(B b) { }
+}
+
